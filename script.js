@@ -13,3 +13,11 @@ var newstr = ""
   return newstr;
 }
 alert(change_register(str));
+
+//скрипт (код, що призведе до краху вкладки)
+let a = 0
+while(a<5){
+  a +=0.001
+  if(a>4.5 && a<4.55) 
+  alert(a)
+}
