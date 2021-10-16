@@ -15,8 +15,8 @@
         });*/
 
           /*window.onload = function() { 
-            alert(Date('Dom завантажений з css та images')); // к этому моменту страница загружена 
-            alert(`Image size: ${img.offsetWidth}x${img.offsetHeight}`); }*/
+            alert(Date('Dom завантажений з css та images'));
+         }*/
                 
            /* window.addEventListener('beforeunload', function(event) {
             event = console.log(Date);
@@ -30,29 +30,16 @@
                 return confirm('Ви впевнені, що хочете покинути цю сторінку');
             }*/
            
-            /*window.onload = function() {
-                let oneTime = new Date();
-                let today = new Date
-                let n = oneTime.getSeconds();
-                console.log(n)}*/
-
-                window.onload = function(){
-                    var oneTime = new Date();
+             //кількість секунд перебування на сайті
+             window.onload = function(){
+                var oneTime = new Date();
                 
-                window.onbeforeunload = function(){
-                    var twoTime = new Date();
-                    let time = (twoTime - oneTime)/1000; 
+            window.onbeforeunload = function(){
+                var twoTime = new Date();
+                let time = (twoTime - oneTime)/1000; 
                 console.log(time);
             }
         }
-                
-
-            //let obj = {timeout: oneTime.getSeconds};
-            /*let timeNow = new Date();
-            timeNow.getSeconds();
-            //let timeThen = new Date();
-            console.log(timeNow.getSeconds() - oneTime.getSeconds(), 'seconds');}*/
-
             </script>
   
      <img id="#img" src="./logo.jpg">
