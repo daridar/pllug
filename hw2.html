@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <title>Homework</title>
+   <style>
+    .dangerous{
+           color: red;
+    }
+  </style>
+ </head>
+ <body>
+   <div class="container">
+     <ul id="animals">
+       <li class="pet">Dog</li>
+       <li id="cat" class="pet">Cat</li>
+       <li class="wild" >Elephant</li>
+       <li class="wild">Whale</li>
+       <li class="wild">Horse</li>
+       <li class="wild dangerous">Tiger</li>
+     </ul>
+     <ul id="birds">
+       <li class="wild">Eagle</li>
+       <li class="wild">Sparrow</li>
+       <li class="pet wild">Parrot</li>
+     </ul>
+   </div>
+   
+   <script>
+    /*
+    //ф-ція змінює розмір шрифта
+     function changeSize(){
+            document.getElementById("animals").style.fontSize =  '30px' ;
+     }
+     changeSize();*/
+
+     //ф-ція видаляє всі класи останнього елемента (animals)
+     /*function removeClass(){
+     var a = document.querySelector("#animals");
+      a.lastElementChild.className = '';
+     }*/
+
+     /*document.querySelector("#animals").forEach(element => {
+     element.removeAttribute("class")
+    });*/
+
+     //ф-ція, що змінює бекграунд після Cat
+     /*function changeColor(){ 
+      var a = document.querySelector("#animals");
+      var b = a.children[1];
+      var c = b.nextSibling;
+      c.nextSibling.style.background = 'red';
+     }
+     changeColor();*/
+
+     //ф-ція, яка змінює колір ел. з класом "dangerous"
+      /*function changeColor(){
+      const test = document.querySelector('.dangerous')
+        test.style.color = "red";}
+        changeColor();*/
+
+      //видаляє клас pet
+      /*const test = document.querySelectorAll('.pet')
+      test.forEach(item => {
+        if(item.classList.length === 1) {
+          item.remove() }
+      });*/
+
+     //ф-ція додає елемент в кінець
+     /*const list = document.querySelector('#birds');
+     const newElement = document.createElement('li');
+     newElement.textContent = 'Pigeon';
+     list.appendChild(newElement);*/
+
+     //ф-ція додає елемент на початок 
+     /*const list = document.querySelector('#birds');
+     const newElementFirst = document.createElement('li');
+     newElementFirst.textContent = 'Duck';
+     var secondElement = list.firstChild;
+     list.insertBefore(newElementFirst, secondElement)*/
+    
+    const list = document.querySelector("#birds");
+    const newList = document.createElement("ul");
+       newList.setAttribute('id', 'fish');
+    list.appendChild(newList)
+
+   </script>
+ </body>
+</html>
