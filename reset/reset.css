@@ -1,0 +1,126 @@
+@media all and (min-width: 576px) and (max-width: 1200px) {}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+section {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+section .mainImg {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+section .mainImg:hover text  {
+    position: absolute;
+	top	: 565px;
+	left: 0;
+	width: 345;
+    height: 156px;
+    color: whitesmoke;
+    letter-spacing: 0.4;
+    background: rgb(0, 0, 0); 
+	background: rgba(0, 0, 0, 0.7);
+    transition: 0.6s all;
+    opacity: 1;
+	/*padding: 5px;*/
+}
+section .mainImg img{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section .content  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+section .content .form h2 {
+    color: #FF6666;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-style:oblique;
+    position: relative;
+    left: 40%;
+}
+section .content .form .input {
+    margin-bottom: 20px;
+}
+
+section .content .form .input input {
+    padding: 8px 15px;
+    width: 100%;
+    font-weight: 500;
+    outline: none;
+    border: 1.2px solid #999999;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    color: #999999;
+    background: transparent;
+    border-radius: 15px;
+}
+section .content .form .input input[type="submit"] {
+    background-color: #FF6666;
+    font-size: 17px;
+    color: white;
+    font-weight: 750;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    width: 12em;  
+    height: 2.2em;
+    border-radius: 11px;
+}
+
+section .content .form .input input[type="submit"]:hover{
+    background-color: white;
+    color: #FF6666;
+    border: 2px solid #FF6666;
+}
+.logo {
+    position:absolute;
+    top:0;
+    right:0;
+    width:254px;
+    height: 100px;
+}
+section .content .form .input p {
+    text-indent: 0.3em;
+    display: flex;
+    justify-content: left;
+    left: 50%;
+    text-align: left;
+    margin: 11px 22px;
+    margin-bottom: 0.2em;
+    color: #999999;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+section .content .form .input p a {
+    color: grey;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0.5px; 
+}
+section .content .form .input span {
+    color: #999999;
+    border-bottom: 1.6px dotted;
+}
