@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="example"></div>
+    <script type="text/javascript">
+        /*document.addEventListener("DOMContentLoaded", ()=> {
+            alert(Date('Dom завантажений, але без css та images'));
+        });*/
+
+          /*window.onload = function() { 
+            alert(Date('Dom завантажений з css та images'));
+         }*/
+                
+           /* window.addEventListener('beforeunload', function(event) {
+            event = console.log(Date);
+            });*/
+
+            /*let name = navigator.appCodeName;
+            let platform = navigator.platform;
+            console.log(name + '-' + platform);*/
+            
+            /*window.onbeforeunload = function(){
+                return confirm('Ви впевнені, що хочете покинути цю сторінку');
+            }*/
+           
+             //кількість секунд перебування юзера на сайті
+             window.onload = function(){
+                var oneTime = new Date();
+                
+            window.onbeforeunload = function(){
+                var twoTime = new Date();
+                let time = (twoTime - oneTime)/1000; 
+                console.log(time);
+            }
+        }
+            </script>
+  
+     <img id="#img" src="./logo.jpg">
+    
+</body>
+</html>
